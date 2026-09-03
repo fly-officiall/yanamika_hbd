@@ -835,11 +835,11 @@ const TOTAL_PAGES = 6;
 let currentPage = 1;
 
 const progressDots = document.getElementById('progressDots');
-for(let i=1;i<=TOTAL_PAGES;i++){
-  const d = document.createElement('span');
-  if(i===1) d.classList.add('active');
-  progressDots.appendChild(d);
-}
+// for(let i=1;i<=TOTAL_PAGES;i++){
+//   const d = document.createElement('span');
+//   if(i===1) d.classList.add('active');
+//   progressDots.appendChild(d);
+// }
 
 function updateChrome(){
   document.getElementById('progressLabel').textContent = currentPage + ' / ' + TOTAL_PAGES;
